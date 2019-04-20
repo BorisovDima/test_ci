@@ -3,6 +3,7 @@ import random
 class Core:
 
     def binary_search(self, m, goal):
+        m.sort()
         return self._binary_search(m, goal, 0, len(m)-1)
 
     def _binary_search(self, m, goal, f, l):
